@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MagnetKuglen – 3D-printet</title>
+<style>
+  :root { --main: #1f7a5a; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:Arial,sans-serif; background:#f4f4f4; color:#222; }
+  header { background:var(--main); color:white; padding:22px; text-align:center; }
+  main { max-width:900px; margin:35px auto; padding:0 20px; }
+  .product { background:white; border-radius:18px; padding:30px; display:grid; gap:28px; grid-template-columns:1fr 1fr; box-shadow:0 8px 30px #0001; }
+  .visual { min-height:300px; display:flex; align-items:center; justify-content:center; gap:18px; }
+  .ball { width:120px; height:120px; border-radius:50%; background:var(--main); position:relative; box-shadow:inset -12px -12px 20px #0002; }
+  .ball:after { content:""; position:absolute; width:32px; height:32px; border-radius:50%; background:#777; left:44px; top:44px; box-shadow:inset 4px 4px 7px #0005; }
+  .info h1 { margin-top:0; font-size:36px; }
+  .price { font-size:28px; font-weight:bold; margin:18px 0; }
+  button { border:0; background:var(--main); color:white; padding:15px 24px; border-radius:10px; font-size:17px; cursor:pointer; }
+  section { background:white; margin-top:25px; padding:25px; border-radius:16px; }
+  footer { text-align:center; padding:30px; color:#666; }
+  @media (max-width:700px) { .product { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header><h2>MAGNETKUGLEN</h2><p>3D-printet produkt med genbrugsmateriale</p></header>
+<main>
+  <div class="product">
+    <div class="visual" aria-label="Illustration af to magnetkugler">
+      <div class="ball"></div><div class="ball"></div>
+    </div>
+    <div class="info">
+      <h1>Magnetkuglen</h1>
+      <p>En 3D-printet kugle med en magnet i midten. Enkel, sjov og lavet med fokus på genbrug.</p>
+      <div class="price">50 kr. pr. stk.</div>
+      <button onclick="alert('Tak! Købsfunktionen kan kobles til en rigtig betalingsløsning senere.')">Køb nu</button>
+    </div>
+  </div>
+  <section>
+    <h2>♻️ Fra plastikflaske til produkt</h2>
+    <p>Plastik fra eksempelvis tomme cola-flasker kan indsamles og omdannes til materiale, der kan bruges til 3D-print. Materialet kan derefter bruges til at fremstille vores kugler.</p>
+  </section>
+  <section>
+    <h2>Returordning</h2>
+    <p>Har du en tom plastikflaske, kan du aflevere den tilbage, så den kan indgå i vores genbrugsidé.</p>
+  </section>
+</main>
+<footer>© 2026 MagnetKuglen</footer>
+</body>
+</html>
